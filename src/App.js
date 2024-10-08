@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
+function Feature() {
+  return (
+    <div className="feature">
+      <img src="" alt="" className="feature-image" />
+      <h3 className="feature-title">Title</h3>
+      <p className="feature-desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+        corrupti accusamus corporis amet. Minus ipsum quos, ex blanditiis
+        placeat quas libero cumque, aliquid tenetur, sunt enim nisi quis aliquam
+        facilis mollitia vitae provident! Perspiciatis quos esse qui velit iusto
+        numquam sapiente, hic dicta cumque corporis magnam quibusdam blanditiis,
+        excepturi similique.
+      </p>
+    </div>
+  );
+}
+//parent component
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    //child component
+    <div>
+      <Feature></Feature>
+      <Feature></Feature>
+      <Feature></Feature>
     </div>
   );
 }
